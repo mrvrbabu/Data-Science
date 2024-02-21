@@ -1,3 +1,5 @@
 Python extension for Visual Studio Code
 AREPL for python
 Core Runner (.run)
+pip install autopep8
+pip install pylint 
