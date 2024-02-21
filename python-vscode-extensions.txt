@@ -3,3 +3,4 @@ AREPL for python
 Core Runner (.run)
 pip install autopep8
 pip install pylint 
+File -> Preferences -> Settings -> 'format on save' (Make sure Editor: Format On Save) is ticked
