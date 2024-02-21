@@ -4,3 +4,13 @@ Core Runner (.run)
 pip install autopep8
 pip install pylint 
 File -> Preferences -> Settings -> 'format on save' (Make sure Editor: Format On Save) is ticked
+Shotcut to run the python code in vscode - 'ctrl + s' ---> 'ctrl + alt + n'
+comments - 'ctrl + /', for mac it is 'command + /'
+""" 
+This is a multiline comment also called doc string or document string
+"""
+
+'''
+This is also a multiline comment also called doc string or document string
+'''
+
