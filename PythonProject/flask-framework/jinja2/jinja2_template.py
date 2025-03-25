@@ -67,5 +67,11 @@ def successif(newscore):
     return render_template('successifi.html', newscore=newscore)
 
 
+# One more if else condition 
+@getpost.route('/successifelse/<int:newscore>')
+def successifelse(newscore):
+    return render_template('successifelse.html', newscore=newscore)
+
+
 if __name__ == "__main__":
     getpost.run(debug=True, host='0.0.0.0', port='5000')
