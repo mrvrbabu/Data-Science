@@ -1,0 +1,9 @@
+<h1>
+    <!-- Based on your marks you have Passed {{ newscore }} -->
+
+    {% if newscore >= 50 %}
+    <h1>You have passed with marks {{newscore}}</h1>
+    {% else %}
+    <h1>You have failed with {{newscore}} marks </h1>
+    {% endif %}
+</h1>
