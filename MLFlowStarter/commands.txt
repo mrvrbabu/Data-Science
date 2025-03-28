@@ -1,0 +1,21 @@
+(.venv) rbabu@k8s-master:~/Data-Science/MLFlowStarter$ mlflow server -h 0.0.0.0 
+[2025-03-27 05:43:35 +0000] [152718] [INFO] Starting gunicorn 23.0.0
+[2025-03-27 05:43:35 +0000] [152718] [INFO] Listening at: http://0.0.0.0:5000 (152718)
+[2025-03-27 05:43:35 +0000] [152718] [INFO] Using worker: sync
+
+
+### 
+
+import mlfow 
+mlflow.set_tracking_uri("http://192.168.0.10:5000/")
+
+
+mlflow.set_experiment("Check localhost connection")
+with mlflow.start_run():
+    mlflow.log_metric("test", 1)
+    mlflow.log_metric("Krish", 2)
+
+
+with mlflow.start_run():
+    mlflow.log_metric("Siddhanth", 1)
+    mlflow.log_metric("Dolly", 2)

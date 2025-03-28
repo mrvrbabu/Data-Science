@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/479082884624467816
+creation_time: 1743056100962
+experiment_id: '479082884624467816'
+last_update_time: 1743056100962
+lifecycle_stage: active
+name: MLFlow Tracker

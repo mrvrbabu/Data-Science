@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/479082884624467816/7eecbec0b9824b2c923a547f9196be3b/artifacts
+end_time: 1743056126815
+entry_point_name: ''
+experiment_id: '479082884624467816'
+lifecycle_stage: active
+run_id: 7eecbec0b9824b2c923a547f9196be3b
+run_name: serious-robin-170
+run_uuid: 7eecbec0b9824b2c923a547f9196be3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743056126778
+status: 3
+tags: []
+user_id: rbabu

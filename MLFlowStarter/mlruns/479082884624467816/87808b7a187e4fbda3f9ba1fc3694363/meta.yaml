@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/479082884624467816/87808b7a187e4fbda3f9ba1fc3694363/artifacts
+end_time: 1743056100994
+entry_point_name: ''
+experiment_id: '479082884624467816'
+lifecycle_stage: active
+run_id: 87808b7a187e4fbda3f9ba1fc3694363
+run_name: loud-mule-326
+run_uuid: 87808b7a187e4fbda3f9ba1fc3694363
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743056100970
+status: 3
+tags: []
+user_id: rbabu
