@@ -19,3 +19,24 @@ Collecting usage statistics. To deactivate, set browser.gatherUsageStats to fals
   External URL: http://49.205.39.142:8501
 
 ^C  Stopping...
+
+
+
+
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
+
+# Step 1: Initialize the KNN model
+knn = KNeighborsClassifier(n_neighbors=3)
+
+# Step 2: Train the model on the training data
+knn.fit(X_train, y_train)
+
+# Step 3: Use the trained model to make predictions on the test data
+y_pred = knn.predict(X_test)
+
+# Step 4: Calculate the accuracy of the model
+accuracy = accuracy_score(y_test, y_pred)
+
+# Step 5: Print the accuracy as a percentage
+print(f'Accuracy: {accuracy * 100:.2f}%')
