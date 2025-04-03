@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/586405261217568013/fe8d34ce7c1c4647b129561a7db605c4/artifacts
+end_time: 1743661354113
+entry_point_name: ''
+experiment_id: '586405261217568013'
+lifecycle_stage: active
+run_id: fe8d34ce7c1c4647b129561a7db605c4
+run_name: charming-colt-559
+run_uuid: fe8d34ce7c1c4647b129561a7db605c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743661349965
+status: 3
+tags: []
+user_id: rbabu

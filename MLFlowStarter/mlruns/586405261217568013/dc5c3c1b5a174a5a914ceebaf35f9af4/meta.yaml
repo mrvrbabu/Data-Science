@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/586405261217568013/dc5c3c1b5a174a5a914ceebaf35f9af4/artifacts
+end_time: 1743662629799
+entry_point_name: ''
+experiment_id: '586405261217568013'
+lifecycle_stage: active
+run_id: dc5c3c1b5a174a5a914ceebaf35f9af4
+run_name: sincere-newt-533
+run_uuid: dc5c3c1b5a174a5a914ceebaf35f9af4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743662626538
+status: 3
+tags: []
+user_id: rbabu
