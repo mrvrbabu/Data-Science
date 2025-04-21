@@ -1,0 +1,59 @@
+rbabu@k8s-master:~/Kubernetes/mlflow$ docker build --network=host -t mlflow . 
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon   5.12kB
+Step 1/15 : FROM python:3.10-slim-bullseye
+ ---> a7dd27d6b770
+Step 2/15 : LABEL maintainer="mrvrbabu"
+ ---> Using cache
+ ---> 59ac238c5796
+Step 3/15 : LABEL description="MLflow is an open-source platform for managing the ML lifecycle, including experimentation, reproducibility, and deployment."
+ ---> Using cache
+ ---> 67e906677729
+Step 4/15 : LABEL version="1.0"
+ ---> Using cache
+ ---> 9fd524f99265
+Step 5/15 : ENV TZ="ASIA/Kolkata"
+ ---> Using cache
+ ---> 3ca2b82018ae
+Step 6/15 : ENV LANG C.UTF-8
+ ---> Using cache
+ ---> f736b1716ba7
+Step 7/15 : ENV LC_ALL C.UTF-8
+ ---> Using cache
+ ---> dbc9be3e5170
+Step 8/15 : ENV GIT_PYTHON_REFRESH=quiet
+ ---> Using cache
+ ---> 4fc9fa8df584
+Step 9/15 : ENV LC_CTYPE C.UTF-8
+ ---> Using cache
+ ---> c8ac1cc45357
+Step 10/15 : RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+ ---> Using cache
+ ---> 81f7fd2ef017
+Step 11/15 : COPY requirements.txt .
+ ---> Using cache
+ ---> f67c304877e9
+Step 12/15 : RUN pip3 install --upgrade pip
+ ---> Using cache
+ ---> 2e6172056699
+Step 13/15 : RUN pip3 install -r requirements.txt
+ ---> Using cache
+ ---> 85dd10027ac1
+Step 14/15 : CMD ["mlflow", "server", "-h", "0.0.0.0"]
+ ---> Using cache
+ ---> b72ea3e7a5d1
+Step 15/15 : EXPOSE 5000
+ ---> Using cache
+ ---> a0339fa09bdf
+Successfully built a0339fa09bdf
+Successfully tagged mlflow:latest
+rbabu@k8s-master:~/Kubernetes/mlflow$ docker run --rm -it -d  --name=mlflow  mlflow
+docker: Error response from daemon: Conflict. The container name "/mlflow" is already in use by container "eced80cfbf23b2fbd8f4411a36211f66b8378c9442d0c598079e2f77533e8625". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+rbabu@k8s-master:~/Kubernetes/mlflow$ docker run --rm -it -d  --name=mlflow  mlflow^C
+rbabu@k8s-master:~/Kubernetes/mlflow$ date
+Mon Apr 21 07:35:35 AM UTC 2025
+rbabu@k8s-master:~/Kubernetes/mlflow$ 
