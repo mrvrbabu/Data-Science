@@ -116,3 +116,97 @@ Rank: 551654|Points: 235/400
 155 more points to get your gold badge!         # Took help for this problem.
 Rank: 526534|Points: 245/400
 
+145 more points to get your gold badge!
+Rank: 503968|Points: 255/400
+
+
+########
+
+18 Sep 2025
+
+145 more points to get your gold badge!
+Rank: 504102|Points: 255/400
+
+#########
+
+23 Sep 2025
+
+145 more points to get your gold badge!
+Rank: 505130|Points: 255/400
+
+########
+
+24 Sep 2025
+145 more points to get your gold badge!
+Rank: 505317|Points: 255/400
+
+
+#######
+
+25 Sep 2025
+45 more points to get your gold badge!
+Rank: 505493|Points: 255/400
+
+
+######
+26 Sep 2025
+45 more points to get your gold badge!
+Rank: 505688|Points: 255/400
+
+
+Problem - https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true 
+135 more points to get your gold badge!
+Rank: 486941|Points: 265/400
+
+My code working perfectly 
+
+N = int(input())
+my_list = []
+
+for _ in range(N):
+    command = input().strip().split()
+    if command[0] == 'insert':
+        my_list.insert(int(command[1]), int(command[2]))
+    elif command[0] == 'remove':
+        my_list.remove(int(command[1]))
+    elif command[0] == 'append':
+        my_list.append(int(command[1]))   
+    elif command[0] == 'sort':
+        my_list.sort()                    
+    elif command[0] == 'pop':
+        my_list.pop()
+    elif command[0] == 'reverse':
+        my_list.reverse()
+    elif command[0] == 'print':
+        print(my_list)
+
+
+Alternate solution 
+
+if __name__ == '__main__':
+    N = int(input())      
+    lst = []
+
+    for _ in range(N):
+        command = input().split()
+        cmd = command[0]
+        args = command[1:]
+
+        if cmd == "insert":
+            i, e = map(int, args)
+            lst.insert(i, e)
+        elif cmd == "print":
+            print(lst)
+        elif cmd == "remove":
+            e = int(args[0])
+            lst.remove(e)
+        elif cmd == "append":
+            e = int(args[0])
+            lst.append(e)
+        elif cmd == "sort":
+            lst.sort()
+        elif cmd == "pop":
+            lst.pop()
+        elif cmd == "reverse":
+            lst.reverse()
+  
